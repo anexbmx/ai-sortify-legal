@@ -9,7 +9,7 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       margin: auto;
-      max-width: 960px;
+      max-width: 1040px;
       padding: 40px 22px;
       line-height: 1.68;
       background: #fafafa;
@@ -25,6 +25,7 @@
     th, td { border: 1px solid #ddd; padding: 10px; vertical-align: top; text-align: left; }
     th { background: #f2f2f2; }
     .muted { color: #666; }
+    .notice { border-left: 4px solid #0066cc; padding: 12px 14px; background: #eef6ff; }
     @media (prefers-color-scheme: dark) {
       body { background: #111; color: #eee; }
       h1, h2, h3 { color: #fff; }
@@ -32,6 +33,7 @@
       th { background: #252525; }
       th, td { border-color: #333; }
       .muted { color: #aaa; }
+      .notice { background: #102033; }
       a { color: #7ab7ff; }
     }
   </style>
@@ -41,23 +43,38 @@
   <p><strong>AI Sortify</strong></p>
   <p class="muted">Last updated: June 17, 2026</p>
 
-  <h2>1. Who we are</h2>
+  <p class="notice">
+    This Privacy Policy explains how AI Sortify processes personal data for its
+    mobile app, account services, AI-assisted document workflows, Google Drive
+    workflows, subscription features, support, and related backend services.
+  </p>
+
+  <h2>1. Controller and contact</h2>
   <p>
-    AI Sortify is a document organization app that helps users classify, rename,
-    split, and file documents into structured workflows, including Google Drive
-    workflows. The service is operated by Anas Boumediene.
+    AI Sortify is operated by <strong>Anas Boumediene</strong>. Unless a separate
+    written agreement says otherwise, the operator is the controller for account,
+    subscription, support, security, and service-operation data. For business
+    document workflows, AI Sortify may also act as a processor for customer
+    content processed on behalf of a workspace or organization.
   </p>
   <p>
     Privacy contact: <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a><br />
-    Legal notice / Impressum: <a href="https://anexbmx.github.io/ai-sortify-legal/Impressum.html">https://anexbmx.github.io/ai-sortify-legal/Impressum.html</a>
+    Legal notice / Impressum: <a href="https://anexbmx.github.io/ai-sortify-legal/Impressum.html">https://anexbmx.github.io/ai-sortify-legal/Impressum.html</a><br />
+    Terms of Service: <a href="https://anexbmx.github.io/ai-sortify-legal/Terms.html">https://anexbmx.github.io/ai-sortify-legal/Terms.html</a><br />
+    Data Processing Agreement: <a href="https://anexbmx.github.io/ai-sortify-legal/DPA.html">https://anexbmx.github.io/ai-sortify-legal/DPA.html</a>
   </p>
 
   <h2>2. Scope</h2>
   <p>
-    This policy explains how AI Sortify processes personal data when you use the
-    mobile app, web pages, account services, subscription services, support, and
-    related backend services. It also describes the third-party processors used
-    to provide the service.
+    This policy applies when you use AI Sortify, including the iOS and Android
+    apps, account registration and login, Google sign-in and Google Drive
+    connection, document scanning and upload, AI classification, folder
+    generation, subscription and plan management, team/workspace features,
+    support requests, and legal or support websites.
+  </p>
+  <p>
+    This policy does not replace privacy notices from Apple, Google, RevenueCat,
+    Supabase, or other third-party services when you use their services directly.
   </p>
 
   <h2>3. Data we process</h2>
@@ -66,162 +83,392 @@
       <tr>
         <th>Category</th>
         <th>Examples</th>
-        <th>Main purpose</th>
+        <th>Purpose</th>
+        <th>Typical source</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Account and contact data</td>
-        <td>Name, email address, user ID, organization/workspace membership, authentication state.</td>
-        <td>Account login, workspace access, team features, security, support.</td>
+        <td>Account and identity data</td>
+        <td>Name, email address, user ID, avatar URL, authentication provider, login state, accepted policy timestamp, language preference.</td>
+        <td>Account creation, login, user profile, security, support, policy acceptance, workspace access.</td>
+        <td>You, Apple, Google, Supabase authentication.</td>
       </tr>
       <tr>
-        <td>User content</td>
-        <td>Documents, images, PDFs, spreadsheets, file names, extracted text, folder names, classification results, custom fields, chat or instruction text entered by the user.</td>
-        <td>Document classification, renaming, splitting, folder selection, review history, and file organization.</td>
+        <td>Workspace and organization data</td>
+        <td>Organization name, short name, business email, phone, website, team members, roles, invitations, workspace settings.</td>
+        <td>Team management, organization profile, billing/workspace administration, collaboration, white-label settings where enabled.</td>
+        <td>You or workspace administrators.</td>
       </tr>
       <tr>
-        <td>Photos, camera input, files, and audio</td>
-        <td>Photos or scans selected by the user, camera captures, selected document files, and optional microphone recordings for voice assistant messages.</td>
-        <td>To process user-selected documents or voice input. These permissions are used only after the user starts the related action.</td>
+        <td>User content and document data</td>
+        <td>Uploaded or selected documents, PDFs, images, scans, spreadsheets, filenames, folder names, extracted text, classification results, generated folder paths, document status, review notes, custom rules.</td>
+        <td>Document classification, renaming, splitting, extraction, folder recommendation, file organization, history, review, and automation.</td>
+        <td>You, your device, Google Drive, or workspace users.</td>
       </tr>
       <tr>
-        <td>Google Drive data</td>
-        <td>Google account email, Drive authorization tokens, selected Drive folder IDs, file IDs, file/folder metadata, and files selected for organization.</td>
-        <td>To create folders, move or rename files, scan selected Drive files, and keep the user's organized documents in their Google Drive.</td>
+        <td>Camera, photo, file, and microphone input</td>
+        <td>Photos selected from the library, camera captures, document-picker files, optional voice messages or microphone recordings.</td>
+        <td>Only to perform user-requested features such as document capture, upload, scanning, text extraction, or voice-assisted instructions.</td>
+        <td>Your device, after permission or file selection.</td>
+      </tr>
+      <tr>
+        <td>Google account and Google Drive data</td>
+        <td>Google account email, OAuth authorization code, access/refresh tokens where required, Drive folder IDs, root folder ID, file IDs, filenames, MIME types, parent folder IDs, selected files/folders, storage quota information, Drive operation results.</td>
+        <td>Connecting Google Drive, creating AI Sortify folders, scanning selected folders/files, moving/renaming/organizing files, syncing Drive connection state, reconnecting Drive.</td>
+        <td>Google APIs, Google Drive, and your authorization.</td>
+      </tr>
+      <tr>
+        <td>AI workflow data</td>
+        <td>Text extracted from documents, document metadata, user instructions, prompt context needed for classification, AI output, confidence/review status, generated labels and folder paths.</td>
+        <td>AI-assisted classification, extraction, file naming, routing, review, and improving reliability of the requested workflow.</td>
+        <td>Your documents, your instructions, backend processing, AI providers.</td>
       </tr>
       <tr>
         <td>Subscription and purchase data</td>
-        <td>Plan, entitlement, subscription status, product identifiers, renewal state, and purchase history provided by Apple and RevenueCat.</td>
-        <td>To unlock paid plans, enforce usage limits, restore purchases, and provide subscription management.</td>
+        <td>Plan, entitlement, subscription status, product ID, purchase history, renewal/cancellation state, RevenueCat app user ID, App Store or Play Store purchase information where available.</td>
+        <td>Unlocking paid features, enforcing usage limits, restoring purchases, customer center/subscription management, fraud prevention, billing support.</td>
+        <td>Apple App Store, Google Play, RevenueCat, app backend.</td>
       </tr>
       <tr>
-        <td>Usage and product interaction data</td>
-        <td>Document counts, split counts, email rule counts, feature usage needed for plan limits, app actions needed to operate the service.</td>
-        <td>To provide app functionality, quota enforcement, reliability, fraud prevention, and support.</td>
+        <td>Usage, quota, and product interaction data</td>
+        <td>Document counts, split counts, email rule counts, feature usage, processing status, failed/reviewed/done files, dashboard summaries, plan limits, timestamps.</td>
+        <td>Providing dashboards, usage limits, plan enforcement, reliability, support, abuse prevention, product operation.</td>
+        <td>Your use of the app and backend systems.</td>
       </tr>
       <tr>
-        <td>Technical data</td>
-        <td>Device/app information, IP address in server logs, authentication tokens, security logs, backend request metadata.</td>
-        <td>Security, abuse prevention, troubleshooting, service reliability, and legal compliance.</td>
+        <td>Technical, security, and diagnostic data</td>
+        <td>Device type, app version, platform, locale, IP address in server logs, request metadata, authentication tokens, error messages, security events, network status.</td>
+        <td>Security, authentication, debugging, abuse prevention, uptime, service reliability, legal compliance.</td>
+        <td>Your device, app, backend, platform services.</td>
+      </tr>
+      <tr>
+        <td>Support and communication data</td>
+        <td>Email address, support messages, account deletion requests, subscription questions, bug reports, legal requests.</td>
+        <td>Responding to requests, resolving issues, maintaining records of support and legal communications.</td>
+        <td>You or your workspace administrators.</td>
+      </tr>
+      <tr>
+        <td>Location or address-search data, if enabled</td>
+        <td>Approximate/current location or typed address query for address suggestions.</td>
+        <td>Providing address suggestions when you use address-related fields. This is optional and depends on app permissions and feature use.</td>
+        <td>Your device and address-search provider.</td>
       </tr>
     </tbody>
   </table>
 
-  <h2>4. How AI and document processing works</h2>
-  <p>
-    AI Sortify processes user-selected documents and related text to classify
-    them, suggest file names, extract useful fields, recommend folders, and
-    support document workflows. Depending on the feature, document content or
-    extracted text may be sent to hosted backend services and AI providers for
-    processing. We use this data to provide the requested feature, not to sell
-    personal data or build advertising profiles.
-  </p>
-  <p>
-    Users should avoid uploading documents they are not authorized to process.
-    If you connect Google Drive, AI Sortify acts on files and folders that you
-    authorize the app to access.
-  </p>
+  <h2>4. Purposes and legal bases</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Purpose</th>
+        <th>Data involved</th>
+        <th>Legal basis where GDPR applies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Create and manage user accounts</td>
+        <td>Account, identity, authentication, policy acceptance, language preference.</td>
+        <td>Contract performance; legitimate interests in security; legal obligation for records where applicable.</td>
+      </tr>
+      <tr>
+        <td>Provide document classification and organization</td>
+        <td>User content, document data, extracted text, AI workflow data, usage data.</td>
+        <td>Contract performance; consent or user instruction for optional uploads/permissions; legitimate interests in reliable service operation.</td>
+      </tr>
+      <tr>
+        <td>Connect and operate Google Drive workflows</td>
+        <td>Google account, OAuth tokens, Drive metadata, selected files/folders, Drive operation results.</td>
+        <td>Contract performance; consent through Google OAuth authorization; legitimate interests in secure token and workflow management.</td>
+      </tr>
+      <tr>
+        <td>Manage subscriptions and paid plans</td>
+        <td>Purchase status, entitlements, plan, product identifiers, RevenueCat data, usage limits.</td>
+        <td>Contract performance; legal obligation for financial records; legitimate interests in fraud prevention and entitlement accuracy.</td>
+      </tr>
+      <tr>
+        <td>Operate teams and organizations</td>
+        <td>Organization profile, team member data, roles, invitations, workspace settings.</td>
+        <td>Contract performance; legitimate interests in workspace administration and access control.</td>
+      </tr>
+      <tr>
+        <td>Security, debugging, support, and abuse prevention</td>
+        <td>Technical logs, account identifiers, error reports, support messages, request metadata.</td>
+        <td>Legitimate interests; legal obligation where applicable.</td>
+      </tr>
+      <tr>
+        <td>Comply with law and enforce terms</td>
+        <td>Account, billing, support, security, and relevant workflow records.</td>
+        <td>Legal obligation; legitimate interests; establishment, exercise, or defense of legal claims.</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <h2>5. Third-party services and processors</h2>
-  <p>AI Sortify uses service providers to operate the app:</p>
+  <h2>5. Google API and Google Drive data</h2>
+  <p>
+    AI Sortify uses Google APIs only for user-facing features that are visible
+    in the app, such as Google sign-in, connecting Google Drive, creating the AI
+    Sortify root folder, creating folder structures, listing selected files or
+    folders, moving or renaming files, reading selected file metadata, and
+    organizing documents at the user's request.
+  </p>
   <ul>
-    <li><strong>Supabase</strong> for authentication, database, storage, and backend functions.</li>
-    <li><strong>Google APIs / Google Drive</strong> for sign-in and user-authorized Drive workflows.</li>
-    <li><strong>Google Gemini / AI processing services</strong> for AI-assisted document classification and extraction where enabled.</li>
-    <li><strong>Apple App Store</strong> for Apple sign-in and in-app purchase processing on iOS.</li>
-    <li><strong>RevenueCat</strong> for subscription entitlement, purchase status, and customer center functionality.</li>
-    <li><strong>Expo / app platform services</strong> for app builds, updates, and platform functionality.</li>
+    <li>We request Google permissions only to provide implemented app features.</li>
+    <li>We do not sell Google user data.</li>
+    <li>We do not use Google user data for advertising, retargeting, credit scoring, or unrelated profiling.</li>
+    <li>We do not allow humans to read Google Drive files unless needed for support or security and only with user authorization, or where required by law.</li>
+    <li>We may store Drive connection records, tokens, folder IDs, file IDs, and operation metadata as needed to keep Drive workflows working.</li>
+    <li>You can disconnect Google Drive in the app and/or revoke access in your Google account security settings.</li>
   </ul>
   <p>
-    These providers process data only as needed to provide, secure, and maintain
-    the service, subject to their own terms and privacy commitments.
+    AI Sortify's use and transfer of information received from Google APIs will
+    adhere to the Google API Services User Data Policy, including the Limited
+    Use requirements.
   </p>
 
-  <h2>6. Legal bases for processing</h2>
+  <h2>6. AI and document processing</h2>
   <p>
-    Where GDPR or similar laws apply, we rely on the following legal bases:
+    AI Sortify may send document text, document images, filenames, metadata, and
+    user instructions to hosted backend services and AI providers to perform
+    classification, extraction, file naming, folder routing, review suggestions,
+    and related workflow tasks. AI processing is used to provide the feature the
+    user requested.
   </p>
-  <ul>
-    <li><strong>Contract performance</strong> to provide your account, document workflows, Google Drive actions, and subscriptions.</li>
-    <li><strong>Consent</strong> where you grant permissions such as Google Drive access, camera, photo library, microphone, or optional AI/document actions.</li>
-    <li><strong>Legitimate interests</strong> for service security, abuse prevention, debugging, usage limits, and product reliability.</li>
-    <li><strong>Legal obligation</strong> for accounting, tax, consumer, and compliance requirements.</li>
-  </ul>
+  <p>
+    AI output can be incomplete or inaccurate. Users remain responsible for
+    reviewing classification results, extracted fields, suggested filenames, and
+    destination folders before relying on them. Users must not upload documents
+    they are not authorized to process.
+  </p>
+  <p>
+    AI Sortify does not sell document content and does not use document content
+    for third-party advertising. If a future feature would use content for a new
+    purpose that is materially different from this policy, the policy will be
+    updated and users will be notified where required.
+  </p>
 
-  <h2>7. Sharing and sale of data</h2>
+  <h2>7. Device permissions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Permission</th>
+        <th>Why it may be requested</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Camera</td>
+        <td>To scan or capture documents when you choose to use camera capture.</td>
+      </tr>
+      <tr>
+        <td>Photo library</td>
+        <td>To select images or scans for upload or classification.</td>
+      </tr>
+      <tr>
+        <td>Document picker / files</td>
+        <td>To select PDFs, spreadsheets, images, or other files for processing.</td>
+      </tr>
+      <tr>
+        <td>Microphone</td>
+        <td>To record optional voice assistant messages or voice instructions when enabled.</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>Only if an address-suggestion feature is used and permission is granted.</td>
+      </tr>
+      <tr>
+        <td>Secure storage</td>
+        <td>To store authentication/session information securely on the device where supported.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>8. Service providers and subprocessors</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Provider</th>
+        <th>Role</th>
+        <th>Data involved</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase</td>
+        <td>Authentication, database, storage, backend platform.</td>
+        <td>Account data, workspace data, app records, storage objects, authentication/session data.</td>
+      </tr>
+      <tr>
+        <td>Google APIs / Google Drive / Google Sign-In</td>
+        <td>Sign-in and user-authorized Drive workflows.</td>
+        <td>Google account data, Drive metadata, selected files/folders, OAuth tokens, Drive operation data.</td>
+      </tr>
+      <tr>
+        <td>Google Cloud / hosted backend services</td>
+        <td>Backend API, document workflow processing, Drive OAuth exchange, service operation.</td>
+        <td>Account identifiers, request metadata, Drive connection data, document workflow data.</td>
+      </tr>
+      <tr>
+        <td>Google Gemini or other AI services used by AI Sortify</td>
+        <td>AI-assisted classification, extraction, naming, and workflow support.</td>
+        <td>Document text/images/metadata and user instructions needed for the requested AI task.</td>
+      </tr>
+      <tr>
+        <td>Apple App Store / Apple Sign-In</td>
+        <td>Authentication and iOS purchase processing.</td>
+        <td>Apple account identity data made available to the app, purchase and subscription data.</td>
+      </tr>
+      <tr>
+        <td>Google Play, if Android purchases are enabled</td>
+        <td>Android app distribution and purchase processing.</td>
+        <td>Purchase and subscription data.</td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>Subscription entitlement, customer center, restore purchases.</td>
+        <td>App user ID/workspace ID, product identifiers, subscription status, purchase events.</td>
+      </tr>
+      <tr>
+        <td>Expo / EAS and app platform services</td>
+        <td>App builds, updates, platform functionality.</td>
+        <td>Technical app/build metadata and update-related data.</td>
+      </tr>
+      <tr>
+        <td>GitHub Pages</td>
+        <td>Hosting legal pages.</td>
+        <td>Standard web access logs handled by the hosting provider.</td>
+      </tr>
+      <tr>
+        <td>Email provider used by the operator</td>
+        <td>Support and legal contact.</td>
+        <td>Email address, message content, support request details.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>9. Sharing, sale, and tracking</h2>
   <p>
     We do not sell personal data. We do not use personal data for third-party
-    advertising or cross-app tracking. We share data only with service providers
-    needed to operate AI Sortify, with app stores/payment providers, with Google
-    when you use Google Drive, when required by law, or when needed to protect
-    the service and users.
+    advertising or cross-app tracking. We share personal data only when needed
+    to provide the service, process subscriptions, operate Google Drive
+    workflows, comply with law, protect users or the service, or with your
+    instruction or consent.
   </p>
 
-  <h2>8. App Store privacy label summary</h2>
+  <h2>10. Retention</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Retention approach</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Account and profile data</td>
+        <td>Kept while the account is active and then deleted or anonymized after account deletion, unless legal retention applies.</td>
+      </tr>
+      <tr>
+        <td>Policy acceptance records</td>
+        <td>Kept as needed to prove consent/contract acceptance and comply with legal requirements.</td>
+      </tr>
+      <tr>
+        <td>Documents, extracted text, classifications, and workflow records</td>
+        <td>Kept as needed to provide history, review, automation, and workspace functionality until deleted by the user, workspace administrator, or account deletion process, subject to backups and legal retention.</td>
+      </tr>
+      <tr>
+        <td>Google Drive tokens and connection data</td>
+        <td>Kept while Drive is connected and deleted or invalidated after disconnect/account deletion where technically possible, subject to backup and security logs.</td>
+      </tr>
+      <tr>
+        <td>Subscription and purchase records</td>
+        <td>Kept as long as needed for entitlements, billing support, tax/accounting, fraud prevention, and legal obligations.</td>
+      </tr>
+      <tr>
+        <td>Security, diagnostic, and server logs</td>
+        <td>Kept for a limited period appropriate for security, debugging, fraud prevention, and reliability unless longer retention is needed for legal or security reasons.</td>
+      </tr>
+      <tr>
+        <td>Support communications</td>
+        <td>Kept as needed to respond to requests, maintain support history, and handle legal or account issues.</td>
+      </tr>
+    </tbody>
+  </table>
   <p>
-    AI Sortify's App Store privacy label is intended to describe data collected
-    for app functionality and linked to the user's account, including name,
-    email address, user ID, user content such as photos/videos, audio data,
-    other user content, purchase history, and product interaction. These data
-    types are not used for tracking.
+    Backup deletion can take additional time because backups are rotated on a
+    schedule. Google Drive files remain in your Google Drive unless you or an
+    authorized workflow move, rename, trash, or delete them.
   </p>
 
-  <h2>9. Retention</h2>
+  <h2>11. Security</h2>
   <p>
-    We keep personal data only as long as reasonably necessary to provide AI
-    Sortify, maintain account and subscription records, comply with legal
-    obligations, resolve disputes, and enforce agreements. User content and
-    processing history may remain in the account until deleted by the user or
-    until the account is deleted, subject to backups and legal retention
-    requirements. Google Drive files remain in the user's Google Drive unless
-    the user or an authorized workflow moves, renames, or deletes them.
+    We use technical and organizational measures designed to protect personal
+    data, including encrypted transport, authenticated access, secure token
+    storage on device where supported, backend access controls, least-privilege
+    access, provider security controls, and operational monitoring. No internet
+    service can guarantee absolute security.
   </p>
 
-  <h2>10. Security</h2>
+  <h2>12. International transfers</h2>
   <p>
-    We use technical and organizational measures such as encrypted transport,
-    authenticated access, secure token storage on device where supported, access
-    controls, and backend security controls. No system can be guaranteed to be
-    completely secure, but we work to protect user data against unauthorized
-    access, loss, misuse, and alteration.
+    Providers may process data in countries other than your country of
+    residence. Where required, we rely on appropriate safeguards such as data
+    processing agreements, standard contractual clauses, adequacy decisions, or
+    other lawful transfer mechanisms.
   </p>
 
-  <h2>11. International transfers</h2>
-  <p>
-    Service providers may process data in countries other than your country of
-    residence. Where required, we rely on appropriate transfer mechanisms such
-    as data processing agreements, contractual safeguards, or other lawful
-    transfer bases.
-  </p>
-
-  <h2>12. Your choices and rights</h2>
+  <h2>13. Your choices and rights</h2>
   <ul>
-    <li>You can disconnect Google Drive access from the app and/or your Google account settings.</li>
-    <li>You can manage or cancel Apple subscriptions in your Apple ID subscription settings.</li>
-    <li>You can deny or revoke camera, photo, microphone, and other device permissions in iOS settings.</li>
-    <li>You may request access, correction, deletion, export, restriction, or objection where applicable by contacting us.</li>
-    <li>You may request account deletion by contacting <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a>.</li>
+    <li>You can decline optional device permissions or revoke them in your device settings.</li>
+    <li>You can disconnect Google Drive in AI Sortify and/or revoke access in your Google account settings.</li>
+    <li>You can manage or cancel subscriptions in your Apple ID or Google Play subscription settings.</li>
+    <li>You may request access, correction, deletion, export, restriction, or objection where applicable.</li>
+    <li>You may withdraw consent where processing is based on consent. This does not affect processing before withdrawal.</li>
+    <li>You may contact a data protection authority if you believe your rights have been violated.</li>
   </ul>
-
-  <h2>13. Children</h2>
   <p>
-    AI Sortify is not directed to children. We do not knowingly collect personal
-    data from children under the age required by applicable law. If you believe
-    a child has provided personal data, contact us so we can take appropriate
-    action.
+    To make a privacy or deletion request, contact
+    <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a>. We may need to
+    verify your identity before acting on a request.
   </p>
 
-  <h2>14. Changes</h2>
+  <h2>14. Automated decision-making</h2>
   <p>
-    We may update this Privacy Policy when the app, providers, or legal
-    requirements change. The updated version will be posted at this URL with a
-    new "Last updated" date.
+    AI Sortify uses AI to assist with document classification, extraction,
+    naming, and routing. These outputs are workflow suggestions and processing
+    results for document organization. AI Sortify is not intended to make
+    solely automated decisions about people with legal or similarly significant
+    effects. Users should review AI results before relying on them.
   </p>
 
-  <h2>15. Contact</h2>
+  <h2>15. Business customer and processor terms</h2>
   <p>
-    For privacy questions or rights requests, contact:<br />
+    If you use AI Sortify for business documents, you are responsible for
+    ensuring that you have a lawful basis and authority to upload, connect,
+    process, or organize those documents. Where AI Sortify processes personal
+    data on behalf of a business customer, the
+    <a href="https://anexbmx.github.io/ai-sortify-legal/DPA.html">Data Processing Agreement</a>
+    applies unless a separate written agreement is signed.
+  </p>
+
+  <h2>16. Children</h2>
+  <p>
+    AI Sortify is not directed to children and should not be used by children
+    below the age required by applicable law. If you believe a child has provided
+    personal data, contact us so we can take appropriate action.
+  </p>
+
+  <h2>17. Changes</h2>
+  <p>
+    We may update this Privacy Policy when the app, providers, data practices,
+    or legal requirements change. The updated version will be posted at this URL
+    with a new "Last updated" date. If required, we will provide additional
+    notice or request renewed consent.
+  </p>
+
+  <h2>18. Contact</h2>
+  <p>
     <strong>Anas Boumediene</strong><br />
     Email: <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a><br />
     Website: <a href="https://anexbmx.github.io/ai-sortify-legal/">https://anexbmx.github.io/ai-sortify-legal/</a>

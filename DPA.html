@@ -5,28 +5,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Sortify Data Processing Agreement</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; background: #fafafa; color: #333; }
-    h1, h2, h3 { color: #111; }
-    h1 { margin-bottom: 10px; font-size: 32px; }
-    h2 { margin-top: 40px; border-bottom: 2px solid #eee; padding-bottom: 8px; font-size: 22px; }
-    h3 { margin-top: 25px; font-size: 18px; }
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: auto;
+      max-width: 1040px;
+      padding: 40px 22px;
+      line-height: 1.68;
+      background: #fafafa;
+      color: #222;
+    }
+    h1, h2, h3 { color: #111; line-height: 1.25; }
+    h1 { margin-bottom: 8px; font-size: 34px; }
+    h2 { margin-top: 38px; border-bottom: 1px solid #ddd; padding-bottom: 8px; font-size: 22px; }
     p, li { font-size: 16px; }
-    strong { font-weight: 600; }
-    a { color: #007aff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .section { margin-bottom: 40px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
-    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+    a { color: #0066cc; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; background: #fff; }
+    th, td { border: 1px solid #ddd; padding: 10px; vertical-align: top; text-align: left; }
     th { background: #f2f2f2; }
+    .muted { color: #666; }
+    .notice { border-left: 4px solid #0066cc; padding: 12px 14px; background: #eef6ff; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #111; color: #eee; }
+      h1, h2, h3 { color: #fff; }
+      table { background: #181818; }
+      th { background: #252525; }
+      th, td { border-color: #333; }
+      .muted { color: #aaa; }
+      .notice { background: #102033; }
+      a { color: #7ab7ff; }
+    }
   </style>
 </head>
 <body>
+  <h1>Data Processing Agreement</h1>
+  <p><strong>AI Sortify</strong></p>
+  <p class="muted">Last updated: June 17, 2026</p>
 
-  <h1>Data Processing Agreement</h1><p><strong>Processor:</strong> AI Sortify / Anas Boumediene</p><p><strong>Contact:</strong> <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a></p><p><strong>Last Updated:</strong> June 17, 2026</p>
-  <div class="section"><h2>1. Scope</h2><p>This Data Processing Agreement applies when AI Sortify processes personal data on behalf of a customer for document classification, file organization, automation, and related app functions.</p></div>
-  <div class="section"><h2>2. Processing Activities</h2><p>Processing may include storage, retrieval, classification, extraction, transformation, transmission, and deletion of documents, metadata, account data, and workflow data.</p></div>
-  <div class="section"><h2>3. Security</h2><p>We use reasonable technical and organizational measures designed to protect personal data, including authenticated access, transport encryption, access controls, and service-provider safeguards.</p></div>
-  <div class="section"><h2>4. Subprocessors</h2><p>Subprocessors may include hosting, database, authentication, analytics, subscription, AI, and storage providers required to operate AI Sortify.</p></div>
-  <div class="section"><h2>5. Assistance and Deletion</h2><p>We will reasonably assist with data-subject requests and deletion/export requests where technically possible. Contact <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a>.</p></div>
+  <p class="notice">
+    This Data Processing Agreement ("DPA") applies when AI Sortify processes
+    personal data on behalf of a customer or workspace in connection with the
+    AI Sortify service. It forms part of the Terms of Service unless a separate
+    written data processing agreement is signed.
+  </p>
+
+  <h2>1. Parties and roles</h2>
+  <p>
+    <strong>Customer / Controller:</strong> the person, company, organization,
+    or workspace administrator that determines the purposes and means of
+    processing personal data uploaded to or connected with AI Sortify.
+  </p>
+  <p>
+    <strong>AI Sortify / Processor:</strong> AI Sortify, operated by Anas
+    Boumediene, processes customer personal data only to provide and support the
+    service, according to customer instructions, this DPA, the Terms, and
+    applicable law.
+  </p>
+
+  <h2>2. Subject matter and duration</h2>
+  <p>
+    The subject matter is the processing of personal data for AI-assisted
+    document classification, extraction, renaming, splitting, folder generation,
+    Google Drive workflows, workspace/team features, subscription enforcement,
+    support, security, and related service operation.
+  </p>
+  <p>
+    Processing continues for the duration of the customer's use of AI Sortify
+    and any additional period required for deletion, backup rotation, legal
+    obligations, dispute resolution, or security purposes.
+  </p>
+
+  <h2>3. Nature and purpose of processing</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Processing activity</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Collection, upload, retrieval, storage, and transmission</td>
+        <td>Receive documents, metadata, workspace records, and user instructions for requested workflows.</td>
+      </tr>
+      <tr>
+        <td>Extraction, classification, transformation, and AI analysis</td>
+        <td>Extract text or fields, classify documents, suggest filenames, route files, and generate workflow outputs.</td>
+      </tr>
+      <tr>
+        <td>Google Drive actions</td>
+        <td>Create folders, read selected metadata, move/rename selected files, and maintain Drive connection state.</td>
+      </tr>
+      <tr>
+        <td>Access control and workspace administration</td>
+        <td>Authenticate users, manage teams, enforce permissions, and protect workspaces.</td>
+      </tr>
+      <tr>
+        <td>Logging, diagnostics, and support</td>
+        <td>Operate, troubleshoot, secure, and improve reliability of the service.</td>
+      </tr>
+      <tr>
+        <td>Deletion, anonymization, backup, and export</td>
+        <td>Handle user/customer deletion, disconnection, export, portability, and backup lifecycle requests.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Categories of personal data</h2>
+  <ul>
+    <li>Account identifiers: name, email, user ID, avatar, language, authentication metadata.</li>
+    <li>Workspace data: organization name, team members, roles, invitations, settings.</li>
+    <li>Document content: PDFs, images, scans, spreadsheets, extracted text, filenames, metadata, classification outputs.</li>
+    <li>Google Drive data: account email, OAuth tokens, folder IDs, file IDs, filenames, MIME types, folder paths, selected file/folder metadata.</li>
+    <li>AI workflow data: prompts/instructions, extracted fields, classification labels, suggested filenames, confidence/review status.</li>
+    <li>Subscription and usage data: plan, entitlement, usage counts, quota data, purchase status.</li>
+    <li>Technical and security data: IP addresses in logs, request metadata, device/app metadata, error logs, audit/security records.</li>
+    <li>Support data: messages, screenshots or documents provided for support, deletion requests, legal requests.</li>
+  </ul>
+
+  <h2>5. Categories of data subjects</h2>
+  <ul>
+    <li>Customer users and workspace administrators.</li>
+    <li>Customer employees, contractors, clients, suppliers, or business contacts appearing in uploaded documents.</li>
+    <li>Team invitees and support contacts.</li>
+    <li>Individuals whose personal data appears in documents, filenames, folders, metadata, or user instructions.</li>
+  </ul>
+
+  <h2>6. Customer instructions</h2>
+  <p>
+    Customer instructs AI Sortify to process personal data as needed to provide
+    the service and as configured or initiated by users in the app. AI Sortify
+    will not process customer personal data for unrelated purposes unless
+    required by law. If AI Sortify believes an instruction violates applicable
+    data protection law, it may suspend the instruction and inform the customer
+    where legally permitted.
+  </p>
+
+  <h2>7. Confidentiality</h2>
+  <p>
+    AI Sortify restricts access to personal data to persons and providers that
+    need access to operate, secure, support, or maintain the service. Persons
+    with access are required to maintain confidentiality by contract,
+    professional duty, or equivalent obligation.
+  </p>
+
+  <h2>8. Security measures</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Area</th>
+        <th>Measures</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Transport and access</td>
+        <td>HTTPS/TLS transport, authenticated API access, session controls, and provider access controls.</td>
+      </tr>
+      <tr>
+        <td>Device/session storage</td>
+        <td>Secure on-device storage for authentication/session data where supported by the platform.</td>
+      </tr>
+      <tr>
+        <td>Authorization</td>
+        <td>Workspace/user access controls, scoped Google OAuth access, and role-based app flows where applicable.</td>
+      </tr>
+      <tr>
+        <td>Provider security</td>
+        <td>Use of established infrastructure providers with their own technical and organizational controls.</td>
+      </tr>
+      <tr>
+        <td>Operational security</td>
+        <td>Logging, diagnostics, abuse prevention, limited access, and incident response practices appropriate to the service.</td>
+      </tr>
+      <tr>
+        <td>Data lifecycle</td>
+        <td>Deletion/disconnection workflows, backup rotation, and retention limits based on operational and legal needs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>9. Subprocessors</h2>
+  <p>
+    Customer authorizes AI Sortify to use subprocessors needed to provide the
+    service. Current subprocessors or provider categories include:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Subprocessor</th>
+        <th>Purpose</th>
+        <th>Data categories</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase</td>
+        <td>Authentication, database, storage, backend functions.</td>
+        <td>Account, workspace, app, storage, and session data.</td>
+      </tr>
+      <tr>
+        <td>Google APIs / Google Drive / Google Sign-In</td>
+        <td>Sign-in and Drive workflows.</td>
+        <td>Google account, tokens, Drive metadata, selected files/folders.</td>
+      </tr>
+      <tr>
+        <td>Google Cloud / hosted backend services</td>
+        <td>Backend API, Drive OAuth exchange, workflow processing.</td>
+        <td>Account identifiers, request data, Drive connection data, workflow data.</td>
+      </tr>
+      <tr>
+        <td>Google Gemini or other AI providers used by AI Sortify</td>
+        <td>AI classification, extraction, naming, routing.</td>
+        <td>Document content, extracted text, metadata, user instructions.</td>
+      </tr>
+      <tr>
+        <td>Apple App Store / Apple Sign-In</td>
+        <td>Authentication and iOS purchase processing.</td>
+        <td>Apple identity data made available to the app, purchase data.</td>
+      </tr>
+      <tr>
+        <td>Google Play, if Android purchases are enabled</td>
+        <td>Android distribution and purchase processing.</td>
+        <td>Purchase and subscription data.</td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>Subscription entitlement and customer center.</td>
+        <td>App user/workspace ID, product IDs, subscription status, purchase events.</td>
+      </tr>
+      <tr>
+        <td>Expo / EAS and platform services</td>
+        <td>Builds, updates, app platform operation.</td>
+        <td>Technical app/build/update metadata.</td>
+      </tr>
+      <tr>
+        <td>GitHub Pages</td>
+        <td>Hosting legal pages.</td>
+        <td>Standard web access logs handled by the hosting provider.</td>
+      </tr>
+      <tr>
+        <td>Email/support provider</td>
+        <td>Support and legal communications.</td>
+        <td>Email addresses and support message content.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    AI Sortify may add or replace subprocessors where needed to operate the
+    service. If required by applicable law or a separate customer agreement, AI
+    Sortify will provide notice and an opportunity to object to material
+    subprocessor changes.
+  </p>
+
+  <h2>10. International transfers</h2>
+  <p>
+    Subprocessors may process personal data outside the customer's country. AI
+    Sortify relies on appropriate safeguards where required, such as standard
+    contractual clauses, adequacy decisions, data processing agreements, or
+    other lawful transfer mechanisms.
+  </p>
+
+  <h2>11. Assistance with data subject requests</h2>
+  <p>
+    AI Sortify will reasonably assist customers with data subject access,
+    correction, deletion, restriction, portability, and objection requests to the
+    extent technically possible and legally required. Customers remain
+    responsible for determining whether and how to respond to requests relating
+    to their own documents and workspace data.
+  </p>
+
+  <h2>12. Assistance with compliance</h2>
+  <p>
+    Taking into account the nature of processing and information available to
+    AI Sortify, AI Sortify will reasonably assist customers with security,
+    breach notification, data protection impact assessment, and regulator
+    consultation obligations where required by applicable data protection law.
+  </p>
+
+  <h2>13. Personal data breach</h2>
+  <p>
+    If AI Sortify becomes aware of a personal data breach affecting customer
+    personal data, it will notify affected customers without undue delay where
+    legally required and provide information reasonably available to support
+    customer notification obligations.
+  </p>
+
+  <h2>14. Deletion and return</h2>
+  <p>
+    Upon account deletion, workspace deletion, Drive disconnection, or written
+    request, AI Sortify will delete or return customer personal data where
+    technically possible, unless retention is required for legal, security,
+    backup, dispute, or legitimate operational reasons. Backup deletion may take
+    additional time according to backup rotation schedules.
+  </p>
+
+  <h2>15. Audits and information</h2>
+  <p>
+    AI Sortify will make reasonably necessary information available to
+    demonstrate compliance with this DPA, subject to confidentiality, security,
+    and protection of other customers. Any audit must be reasonable in scope,
+    frequency, timing, and method, and must not compromise service security or
+    third-party confidentiality obligations.
+  </p>
+
+  <h2>16. Customer responsibilities</h2>
+  <ul>
+    <li>Customer must have a lawful basis for all personal data uploaded, connected, or processed through AI Sortify.</li>
+    <li>Customer must provide required notices to data subjects and obtain required consents or authorizations.</li>
+    <li>Customer must configure Google Drive, team roles, permissions, and workflows responsibly.</li>
+    <li>Customer must review AI outputs and is responsible for final decisions based on those outputs.</li>
+    <li>Customer must not upload unlawful content or content that AI Sortify is not designed to process.</li>
+  </ul>
+
+  <h2>17. Conflict</h2>
+  <p>
+    If this DPA conflicts with the Terms of Service, this DPA controls only for
+    processing of personal data on behalf of a customer. A signed written
+    agreement controls over this posted DPA where it expressly says so.
+  </p>
+
+  <h2>18. Contact</h2>
+  <p>
+    Data processing questions: <a href="mailto:anexbm@gmail.com">anexbm@gmail.com</a><br />
+    Privacy Policy: <a href="https://anexbmx.github.io/ai-sortify-legal/Privacy.html">https://anexbmx.github.io/ai-sortify-legal/Privacy.html</a>
+  </p>
 </body>
 </html>
